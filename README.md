@@ -1,4 +1,4 @@
-# NewsReliability
+# NewsReliability新闻可信度的评判与分析
 New way to analyze news similarity and reliability<br>
 分析新闻相似性与可信度的新方法
 
@@ -39,3 +39,8 @@ The main function of our program is to retrieve relative news searched by users 
 
 ## Demostration
 ![](https://raw.githubusercontent.com/RiverLeeGitHub/NewsReliability/master/Demostrations/%E4%B8%AD%E5%85%B4%E4%BA%8B%E4%BB%B6.jpg)
+
+## Special Thanks
+Other groupmates: Jean Chai, Zhibo Gu
+Adviser: Yinghua Fu
+University of Shanghai for Science and Technology

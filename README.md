@@ -3,23 +3,23 @@ New way to analyze news similarity and reliability<br>
 分析新闻相似性与可信度的新方法
 
 ## Abstract
-The main function of our program is to retrieve relative news searched by users via Wechat interaction, and return the classified news as well as each abstract, emotion, the class it belongs to, reliability and recommandation. The news we find and relative reports are only written in Chinese.
-本程序用于检索用户从微信接口查询的相关新闻，并返回给用户分类好的新闻及其摘要、情感、可信度和相关建议。
+The main function of our program is to retrieve relative news searched by users via Wechat interaction, and return the classified news as well as each abstract, link, emotion, the class it belongs to, reliability and recommandation. The news we find and relative reports are only written in Chinese.<br>
+本程序用于检索用户从微信接口查询的相关新闻，并返回给用户分类好的新闻及其链接、摘要、情感、可信度和相关建议。新闻分析仅限中文内容。
 
 ## How to run
 ### Prerequisite
-  Python 3.6: 安装并配置 pip
-  Itchat: 微信端框架，安装命令$ pip install Itchat
-  Bosonnlp: 玻森中文语义开放平台，安装命令$ pip install -U bosonnlp
-  Aip: 百度开放平台，安装命令$ pip install baidu-aip
+  Python 3.6: 安装并配置 pip<br>
+  Itchat: 微信端框架，安装命令$ pip install Itchat<br>
+  Bosonnlp: 玻森中文语义开放平台，安装命令$ pip install -U bosonnlp<br>
+  Aip: 百度开放平台，安装命令$ pip install baidu-aip<br>
   Please keep the network unblocked at runtime. 运行时请保持网络畅通。
 ### Module Function
-  WechatInteraction.py：The entrance of the whole program, using Wechat to interact with user.程序入口，与用户进行微信交互。
-  MainLine.py：The mainline code to call other modules and implement news analyzing.主线代码，用于调用其他模块并进行新闻分析。
-  BaiduNews.py：Search news from Baidu website. 从百度新闻里搜索相关新闻。
-  VectorGeneration.py：Generate semantic vectors. 生成语义向量。
-  NewsLocation.py：News coordinates location. 新闻坐标点定位。
-  NewsAnalyzing.py：News analysing. 新闻分析。
+  WechatInteraction.py：The entrance of the whole program, using Wechat to interact with user.程序入口，与用户进行微信交互。<br>
+  MainLine.py：The mainline code to call other modules and implement news analyzing.主线代码，用于调用其他模块并进行新闻分析。<br>
+  BaiduNews.py：Search news from Baidu website. 从百度新闻里搜索相关新闻。<br>
+  VectorGeneration.py：Generate semantic vectors. 生成语义向量。<br>
+  NewsLocation.py：News coordinates location. 新闻坐标点定位。<br>
+  NewsAnalyzing.py：News analysing. 新闻分析。<br>
   Demostration.py：Provide a demostrative news. 提供一则演示性新闻。
 
 ## Rationale

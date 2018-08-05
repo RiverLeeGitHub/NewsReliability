@@ -41,6 +41,6 @@ The main function of our program is to retrieve relative news searched by users 
 ![](https://raw.githubusercontent.com/RiverLeeGitHub/NewsReliability/master/Demostrations/%E4%B8%AD%E5%85%B4%E4%BA%8B%E4%BB%B6.jpg)
 
 ## Special Thanks
-Other groupmates: Jean Chai, Zhibo Gu
-Adviser: Yinghua Fu
+Other groupmates: Jean Chai, Zhibo Gu<br>
+Adviser: Yinghua Fu<br>
 University of Shanghai for Science and Technology

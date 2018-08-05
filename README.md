@@ -1,5 +1,5 @@
 # NewsReliability
-System for analyzing news similarity and reliability br>
+System for analyzing news similarity and reliability <br>
 新闻可信度的评判与分析(2018.5)
 
 ## Abstract

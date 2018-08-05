@@ -1,6 +1,6 @@
-# NewsReliability新闻可信度的评判与分析
+# NewsReliability
 New way to analyze news similarity and reliability<br>
-分析新闻相似性与可信度的新方法
+新闻可信度的评判与分析(2018.5)
 
 ## Abstract
 The main function of our program is to retrieve relative news searched by users via Wechat interaction, and return the classified news as well as each abstract, link, emotion, the class it belongs to, reliability and recommandation. The news we find and relative reports are only written in Chinese.<br>

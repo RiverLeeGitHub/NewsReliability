@@ -43,6 +43,6 @@ The main function of our program is to retrieve relative news searched by users 
 ## Special Thanks
 Other groupmates: Jean Chai, Zhibo Gu<br>
 Adviser: Yinghua Fu<br>
-Zealous teacher: Zhiyong Ju<br>
-University of Shanghai for Science and Technology<br>
+Enthusiastic teacher: Zhiyong Ju<br>
 Project Number: SH10252035
+University of Shanghai for Science and Technology<br>

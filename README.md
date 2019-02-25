@@ -38,7 +38,7 @@ The main function of our program is to retrieve relative news searched by users 
 每个新闻映射到向量空间后，可采用传统数据挖掘方法进行观点归类与分析。我们采用的是基于密度的Mean Shift聚类方法，可以通过密度阈值自动决定聚类的簇数。在本程序中，每个簇代表一类相似的新闻集合，有几个簇就有几种角度或观点。在新闻聚类完成之后，每一个簇中最接近中心点的新闻最可信，也最有代表性。如果某一新闻n属于簇C，这条新闻到该簇中心点的距离记为D_n，簇C有m个新闻，所有该簇新闻到该簇中心点的距离记为∑_(i=1)^m{D_i} ，则该新闻的可信度R=1-D_n/(∑_(i=1)^m{D_i})。
 
 ## Demonstration
-![](https://raw.githubusercontent.com/RiverLeeGitHub/NewsReliability/master/Demostrations/%E4%B8%AD%E5%85%B4%E4%BA%8B%E4%BB%B6.jpg)
+![](https://github.com/RiverLeeGitHub/NewsReliability/blob/master/Demonstrations/%E4%B8%AD%E5%85%B4%E4%BA%8B%E4%BB%B6.jpg?raw=true)
 
 ## Special Thanks
 Other groupmates: Jean Chai, Zhibo Gu<br>

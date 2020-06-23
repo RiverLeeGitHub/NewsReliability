@@ -2,18 +2,18 @@
 System for analyzing news similarity and reliability <br>
 新闻可信度的评判与分析(2018.5)
 
-## Abstract
+## 概要 Abstract
 The main function of our program is to retrieve relative news searched by users via Wechat interaction, and return the classified news as well as each abstract, link, emotion, the class it belongs to, reliability and recommendation. The news we find and relative reports are only written in Chinese.<br>
 本程序用于检索用户从微信接口查询的相关新闻，并返回给用户分类好的新闻及其链接、摘要、情感、可信度和相关建议。新闻分析仅限中文内容。
 
-## How to run
-### Prerequisite
+## 怎么运行 How to run
+### 运行要求 Prerequisite
   Python 3.6: 安装并配置 pip<br>
   Itchat: 微信端框架，安装命令$ pip install Itchat<br>
   Bosonnlp: 玻森中文语义开放平台，安装命令$ pip install -U bosonnlp<br>
   Aip: 百度开放平台，安装命令$ pip install baidu-aip<br>
   Please keep the network unblocked at runtime. 运行时请保持网络畅通。
-### Module Function
+### 代码介绍 Module Function
   WechatInteraction.py：The entrance of the whole program, using Wechat to interact with user.程序入口，与用户进行微信交互。<br>
   MainLine.py：The mainline code to call other modules and implement news analyzing.主线代码，用于调用其他模块并进行新闻分析。<br>
   BaiduNews.py：Search news from Baidu website. 从百度新闻里搜索相关新闻。<br>
@@ -22,7 +22,7 @@ The main function of our program is to retrieve relative news searched by users 
   NewsAnalyzing.py：News analysing. 新闻分析。<br>
   Demostration.py：Provide a demostrative news. 提供一则演示性新闻。
 
-## Rationale
+## 原理 Rationale
 ### 微信交互 Wechat Interaction
 This system uses Itchat for WeChat interaction, and the server scans the QR code popped up by the program as a medium for the program background to interact with users. Users send the news topics of interest to the server's WeChat, and the program background will receive instructions and retrieve the corresponding news.<br>
 本系统使用Itchat进行微信交互，测试者扫描程序弹出的二维码，作为程序后台与用户交互的媒介。用户向测试者微信发送感兴趣的新闻话题，程序后台将收到指令并进行相应新闻的检索。
@@ -45,10 +45,10 @@ After the semantic vector space is generated, each news will be mapped into the 
 After each news is mapped to the vector space, traditional data mining methods can be used for viewpoint classification and analysis. We use the Mean Shift clustering method which based on feature density, which can automatically determine the number of clusters according to the density threshold. In this program, each cluster represents a similar set of news, and there are several perspectives or viewpoints for several clusters. After the news clustering is completed, the news closest to the center point in each cluster is the most credible and representative. If a news n belongs to cluster C, the distance from this news to the cluster center point is D_n. And cluster C has m news, the sum distance from all cluster news to the cluster center point is ∑_{i = 1}^m {D_i}, then the credibility of the news R = 1 - D_n / (∑_{i = 1}^m {D_i}).<br>
 每个新闻映射到向量空间后，可采用传统数据挖掘方法进行观点归类与分析。我们采用的是基于密度的Mean Shift聚类方法，可以通过密度阈值自动决定聚类的簇数。在本程序中，每个簇代表一类相似的新闻集合，有几个簇就有几种角度或观点。在新闻聚类完成之后，每一个簇中最接近中心点的新闻最可信，也最有代表性。如果某一新闻n属于簇C，这条新闻到该簇中心点的距离记为D_n，簇C有m个新闻，所有该簇新闻到该簇中心点的距离记为∑_{i=1}^m {D_i} ，则该新闻的可信度R=1-D_n/(∑_{i=1}^m {D_i})。
 
-## Demonstration
+## 演示 Demonstration
 ![](https://github.com/RiverLeeGitHub/NewsReliability/blob/master/Demonstrations/%E4%B8%AD%E5%85%B4%E4%BA%8B%E4%BB%B6.jpg?raw=true)
 
-## Special Thanks
+## 特别感谢 Special Thanks
 Other groupmates: Jean Chai, Zhibo Gu<br>
 Adviser: Yinghua Fu<br>
 Enthusiastic teacher: Zhiyong Ju<br>

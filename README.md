@@ -45,13 +45,13 @@ After the semantic vector space is generated, each news will be mapped into the 
 After each news is mapped to the vector space, traditional data mining methods can be used for viewpoint classification and analysis. We use the Mean Shift clustering method which based on feature density, which can automatically determine the number of clusters according to the density threshold. In this program, each cluster represents a similar set of news, and there are several perspectives or viewpoints for several clusters. After the news clustering is completed, the news closest to the center point in each cluster is the most credible and representative. If a news n belongs to cluster C, the distance from this news to the cluster center point is D_n. And cluster C has m news, the sum distance from all cluster news to the cluster center point is ∑_{i = 1}^m {D_i}, then the credibility of the news R = 1 - D_n / (∑_{i = 1}^m {D_i}).<br>
 每个新闻映射到向量空间后，可采用传统数据挖掘方法进行观点归类与分析。我们采用的是基于密度的Mean Shift聚类方法，可以通过密度阈值自动决定聚类的簇数。在本程序中，每个簇代表一类相似的新闻集合，有几个簇就有几种角度或观点。在新闻聚类完成之后，每一个簇中最接近中心点的新闻最可信，也最有代表性。如果某一新闻n属于簇C，这条新闻到该簇中心点的距离记为D_n，簇C有m个新闻，所有该簇新闻到该簇中心点的距离记为∑_{i=1}^m {D_i} ，则该新闻的可信度R=1-D_n/(∑_{i=1}^m {D_i})。
 
-## 演示 Demonstration
+## Demonstration
 <img src="https://github.com/RiverLeeGitHub/NewsReliability/blob/master/Demonstrations/%E4%B8%AD%E5%85%B4%E4%BA%8B%E4%BB%B6.jpg?raw=true" style="zoom:25%;" />
-Sorry it only has Chinese version.
 
-## 特别感谢 Special Thanks
+
+## Special Thanks
 Other groupmates: Jean Chai, Zhibo Gu<br>
-Adviser: Yinghua Fu<br>
+Advisor: Yinghua Fu<br>
 Enthusiastic teacher: Zhiyong Ju<br>
 Project Number: SH10252035<br>
 University of Shanghai for Science and Technology<br>
